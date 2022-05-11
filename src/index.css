@@ -12,8 +12,11 @@
 
 body {
   font-family: 'Jost', sans-serif;
+  background-color: var(--section-background);
 }
-
+a{
+  text-decoration: none;
+}
 /* common classes */
 .section-padding{
   padding-left: 3rem;
