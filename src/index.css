@@ -7,11 +7,24 @@
   --theme-color: #007882;
   --font-primary: #110229;
   --font-secondary: #666666;
-  --section-background: #E5E5E5;
+  --section-background: #FAFAFA;
 }
 
 body {
   font-family: 'Jost', sans-serif;
 }
 
+/* common classes */
+.section-padding{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+
+@media screen and (max-width: 668px) {
+  .section-padding{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 
