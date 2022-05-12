@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { device } from '../../../../utils/screenSize';
+import SideMenu from '../SideMenu/SideMenu';
 
 const Header = () => {
+
+    // side menu state
+    const [isOpen, setIsOpen] = useState(false);
+
 
     const MenuLinks = () => (
         <>
@@ -16,27 +21,33 @@ const Header = () => {
     return (
         <HeaderContainer className='section-padding'>
 
-            <Logo>
-                <img src="/img/logo.png" alt="" />
-            </Logo>
+            <Wraper>
+                <Logo>
+                    <img src="/img/logo.png" alt="" />
+                </Logo>
 
-            <MenuSide>
+                <MenuSide>
 
-                <DesktopMenu>
-                    <MenuLinks />
-                </DesktopMenu>
+                    <DesktopMenu>
+                        <MenuLinks />
+                    </DesktopMenu>
 
-                <ButtonWraper>
-                    <Button>Login</Button>
-                    <Menubar>
-                        <img src="/img/icon-menu.png" alt="" />
-                    </Menubar>
-                </ButtonWraper>
+                    <ButtonWraper>
+                        <Button>Login</Button>
+                        <Menubar onClick={()=> setIsOpen(true)}>
+                            <img src="/img/icon-menu.png" alt="" />
+                        </Menubar>
+                    </ButtonWraper>
 
-            </MenuSide>
+                </MenuSide>
+            </Wraper>
+
+            <SideMenu isOpen={isOpen} setIsOpen={setIsOpen} >
+                <MenuLinks />
+            </SideMenu>
 
         </HeaderContainer>
-            
+
     );
 };
 
@@ -46,12 +57,8 @@ export default Header;
 // styled components
 
 const HeaderContainer = styled.header`
-background: var(--section-background);
 padding-top 3rem;
 padding-bottom: 3rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
 
 @media ${device.pad}{
     padding-top 1.5rem;
@@ -62,6 +69,14 @@ align-items: center;
     padding-bottom: 1rem;
 }
 `;
+
+const Wraper = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+`;
+
+
 
 const Logo = styled.div`
 
@@ -137,10 +152,6 @@ cursor: pointer;
 
 @media ${device.pad}{
     margin-left: 30px;
-}
-
-img{
-    
 }
 `;
 
