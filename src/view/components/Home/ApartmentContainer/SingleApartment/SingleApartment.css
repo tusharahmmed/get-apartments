@@ -2,9 +2,10 @@
 .single-apartment .swiper-slide img{
     width: 100%;
 }
-/* .single-apartment .swiper-pagination-bullet{
-    background: #ccc;
-} */
+.single-apartment .swiper-pagination-bullet{
+    background: #ccc !important;
+    opacity: 1 !important;
+}
 .single-apartment .swiper-pagination-bullet-active{
-    background: #fff;
+    background: #fff !important;
 }

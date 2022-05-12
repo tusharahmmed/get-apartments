@@ -1,0 +1,255 @@
+[
+    {
+        "id": 1,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "purpose": "sell",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png",
+            "/img/villa-5.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "purpose": "sell",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png",
+            "/img/villa-5.png",
+            "/img/villa-1.png"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "5300, Lakeside, Newyork",
+        "price": 13500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-3.png",
+            "/img/villa-4.png",
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "sale",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-4.png",
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    },
+    {
+        "id": 15,
+        "title": "5300, Lakeside, Newyork",
+        "price": 14500,
+        "oldPrice": 16500,
+        "purpose": "rent",
+        "area": 1150,
+        "rooms": 4,
+        "bath": 2,
+        "img": [
+            "/img/villa-5.png",
+            "/img/villa-1.png",
+            "/img/villa-2.png",
+            "/img/villa-3.png",
+            "/img/villa-4.png"
+        ]
+    }
+]

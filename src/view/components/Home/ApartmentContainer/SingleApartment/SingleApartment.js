@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SingleApartment.css';
 import styled from 'styled-components';
 
@@ -7,13 +7,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css/pagination';
 
-const SingleApartment = () => {
+const SingleApartment = (props) => {
+
+    // destructure properties
+    const { id, title, price, purpose, area, rooms, bath, img } = props.data;
+    // just for now 
+    const [wishItem, setWishItem] = useState(false);
+
+    const addWishlist = (id) => {
+        console.log(id);
+        setWishItem(prevCheck => !prevCheck);
+        // send response to backend
+
+    }
 
     return (
         <Container>
 
             <ImageSlider>
-
                 <Swiper className='single-apartment'
                     modules={[Pagination]}
                     pagination={{
@@ -26,52 +37,51 @@ const SingleApartment = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
 
-                    <SwiperSlide>
-                        <img src="/img/villa-1.png" alt="" />
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/img/villa-2.png" alt="" />
-
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="/img/villa-3.png" alt="" />
-
-                    </SwiperSlide>
+                    {
+                        img.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={item} alt="" />
+                            </SwiperSlide>
+                        ))
+                    }
 
                 </Swiper>
 
+                <WishBtn isWish={wishItem} onClick={() => addWishlist(id)}>
+                    <img src="/img/icon-heart.png" alt="" />
+                </WishBtn>
             </ImageSlider>
 
             <Details>
-
-                <Name>5300, Lakeside, Newyork</Name>
+                <Name>{title}</Name>
 
                 <PriceWraper>
-                    <Button>For Buy</Button>
-                    <Price>$14,500</Price>
-                    <Discount>$16,500</Discount>
+                    <Button>For {purpose == 'rent' ? 'Rent' : 'Buy'}</Button>
+                    <Price>${price.toLocaleString()}</Price>
+                    {
+                        !props?.data?.oldPrice ? null : <Discount>${props?.data?.oldPrice}</Discount>
+                    }
+
                 </PriceWraper>
 
                 <FeatureWraper>
 
                     <SingleFeature>
                         <img src="/img/icon-sqr.png" alt="" />
-                        <span>1150 Sqft</span>
+                        <span>{area} Sqft</span>
                     </SingleFeature>
 
                     <SingleFeature>
                         <img src="/img/icon-bed.png" alt="" />
-                        <span>4 Rooms</span>
+                        <span>{rooms} Rooms</span>
                     </SingleFeature>
 
                     <SingleFeature>
                         <img src="/img/icon-bath.png" alt="" />
-                        <span>2 Bath</span>
+                        <span>{bath} Bath</span>
                     </SingleFeature>
 
                 </FeatureWraper>
-
             </Details>
 
         </Container>
@@ -90,7 +100,27 @@ border-radius: 8px;
 `;
 
 const ImageSlider = styled.div`
+position: relative;
+`;
 
+const WishBtn = styled.div`
+position: absolute;
+top: 12px;
+right: 12px;
+z-index: 90;
+height: 32px;
+width: 32px;
+background: ${(props) => props.isWish ? 'var(--theme-color)' : 'rgba(0, 0, 0, 0.3)'} ;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: background .3s;
+
+&:hover{
+    background: var(--theme-color);
+}
 `;
 
 const Details = styled.div`
